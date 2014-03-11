@@ -1,0 +1,16 @@
+language: python
+python:
+  - '2.7'
+env:
+  - DJANGO=1.4 DB=postgres
+  - DJANGO=1.5 DB=postgres
+  - DJANGO=1.6.1 DB=postgres
+install:
+  - pip install -q coverage pep8 pyflakes Django==$DJANGO
+before_script:
+  - find . | grep .py$ | grep -v /migrations | xargs pep8 --max-line-length=120
+  - find . | grep .py$ | grep -v /migrations | grep -v __init__.py | xargs pyflakes
+  - psql -c 'CREATE DATABASE {{ project_name }};' -U postgres
+script:
+  - coverage run --source='{{ project_name }}' --branch setup.py test
+  - coverage report --fail-under=100

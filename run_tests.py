@@ -22,7 +22,7 @@ if not settings.configured:
         db_config = {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'USER': 'postgres',
-            'NAME': '{{ app_name }}',
+            'NAME': '{{ project_name }}',
         }
     else:
         raise RuntimeError('Unsupported test DB {0}'.format(test_db))
@@ -37,10 +37,10 @@ if not settings.configured:
             'django.contrib.sessions',
             'django.contrib.admin',
             'south',
-            '{{ app_name }}',
-            '{{ app_name }}.tests',
+            '{{ project_name }}',
+            '{{ project_name }}.tests',
         ),
-        ROOT_URLCONF='{{ app_name }}.urls',
+        ROOT_URLCONF='{{ project_name }}.urls',
         DEBUG=False,
     )
 
@@ -53,7 +53,7 @@ def run_tests(*test_args, **kwargs):
         patch_for_test_db_setup()
 
     if not test_args:
-        test_args = ['{{ app_name }}']
+        test_args = ['{{ project_name }}']
 
     kwargs.setdefault('interactive', False)
 

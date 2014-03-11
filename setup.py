@@ -9,7 +9,7 @@ def get_version():
     """
     Extracts the version number from the version.py file.
     """
-    VERSION_FILE = '{{ app_name }}/version.py'
+    VERSION_FILE = '{{ project_name }}/version.py'
     mo = re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', open(VERSION_FILE, 'rt').read(), re.M)
     if mo:
         return mo.group(1)
@@ -18,13 +18,13 @@ def get_version():
 
 
 setup(
-    name='{{ project_name }}',
+    name='',
     version=get_version(),
-    description='{{ project_description }}',
+    description='',
     long_description=open('README.md').read(),
-    url='http://github.com/ambitioninc/{{ project_name }}/',
-    author='{{ author_name }}',
-    author_email='{{ author_email }}',
+    url='',
+    author='',
+    author_email='',
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python',
