@@ -4,7 +4,7 @@ python:
 env:
   - DJANGO=1.4 DB=postgres
   - DJANGO=1.5 DB=postgres
-  - DJANGO=1.6.1 DB=postgres
+  - DJANGO=1.6.2 DB=postgres
 install:
   - pip install -q coverage pep8 pyflakes Django==$DJANGO
 before_script:
