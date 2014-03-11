@@ -1,4 +1,6 @@
-{% if False %}Installation Instructions--------
+{% if False %}
+Installation Instructions
+--------
 
 To start a new project with this template:
 
