@@ -4,7 +4,7 @@ Installation Instructions
 
 To start a new project with this template:
 
-django-admin.py startproject --template=https://github.com/ambitioninc/django-app-template/zipball/master project_name
+django-admin.py startproject --template=https://github.com/ambitioninc/django-app-template/zipball/master --extension=py,md,yml project_name
 
 This will create all of the necessary folders and scaffolding for an app with project_name. Note that while most will name their projects something like django-regex-field, the app name is normally a version of that string without "django" and with underscores. For example, regex_field would be an appropriate project name.
 
