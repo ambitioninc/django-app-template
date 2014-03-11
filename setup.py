@@ -1,4 +1,4 @@
-# import multiprocessing to avoid this bug (http://bugs.python.org/issue15881#msg170215_
+# import multiprocessing to avoid this bug (http://bugs.python.org/issue15881#msg170215)
 import multiprocessing
 assert multiprocessing
 import re
@@ -25,6 +25,7 @@ setup(
     url='',
     author='',
     author_email='',
+    keywords='',
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python',
@@ -33,6 +34,7 @@ setup(
         'Operating System :: OS Independent',
         'Framework :: Django',
     ],
+    license='MIT',
     install_requires=[
         'django>=1.4',
     ],
