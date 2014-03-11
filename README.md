@@ -1,6 +1,4 @@
-{% if False %}
-Installation Instructions
--------------------------
+{% if False %}Installation Instructions--------
 
 To start a new project with this template:
 
@@ -18,9 +16,6 @@ Once the project is copied, it is up to the user to open the setup.py file and m
 Other things to note:
 - CONTRIBTORS is left empty. Add your name to that with your email in parentheses next to it
 - You can call python setup.py test and it will install your package and run the one example test included in the template
-- The .travis.yml file installs all necessary testing requirements, such as pep8, pyflakes, and coverage. Note that it is required that your repo have 100% code coverage (including branches)
-
-{% endif %}
-
+- The .travis.yml file installs all necessary testing requirements, such as pep8, pyflakes, and coverage. Note that it is required that your repo have 100% code coverage (including branches){% endif %}
 {{ project_name }}
 ==================
