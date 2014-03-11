@@ -12,5 +12,5 @@ before_script:
   - find . | grep .py$ | grep -v /migrations | grep -v __init__.py | xargs pyflakes
   - psql -c 'CREATE DATABASE {{ project_name }};' -U postgres
 script:
-  - coverage run --source='{{ project_name }}' --branch setup.py test
-  - coverage report --fail-under=100
+  - coverage run --source='{{ project_name }}' --branch --omit='{{ project_name }}/migrations/*' setup.py test
+  - coverage report --fail-under=100 --show-missing
