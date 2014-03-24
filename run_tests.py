@@ -44,6 +44,7 @@ if not settings.configured:
         DEBUG=False,
     )
 
+# Django nose must be imported here since it depends on the settings being configured
 from django_nose import NoseTestSuiteRunner
 
 
