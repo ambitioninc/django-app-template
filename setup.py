@@ -42,6 +42,7 @@ setup(
         'psycopg2',
         'django-nose',
         'south',
+        'mock',
     ],
     test_suite='run_tests.run_tests',
     include_package_data=True,
