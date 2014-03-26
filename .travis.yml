@@ -9,7 +9,7 @@ env:
 install:
   - pip install -q coverage flake8 Django==$DJANGO
 before_script:
-  - find . -name '*.py' -not -regex '.*/migrations/.*' -not -regex '.*/__init__.py' -exec flake8 --max-line-length=120 --max-complexity=10 '{}' \;
+  - flake8 . --max-line-length=120 --max-complexity=10 --exclude='env,migrations,*.egg'
   - psql -c 'CREATE DATABASE {{ project_name }};' -U postgres
 script:
   - coverage run --source='{{ project_name }}' --branch --omit='{{ project_name }}/migrations/*' setup.py test
