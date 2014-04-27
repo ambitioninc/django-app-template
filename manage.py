@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import os
 import sys
 
 from settings import configure_settings
