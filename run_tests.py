@@ -2,8 +2,9 @@
 Provides the ability to run test on a standalone Django app.
 """
 import sys
-from django.conf import settings
 from optparse import OptionParser
+
+from django.conf import settings
 
 from settings import configure_settings
 
