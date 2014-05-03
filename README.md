@@ -31,7 +31,7 @@ Go to github.com and create the initial public repository with nothing (i.e. no 
     git init
     git add .
     git commit -m 'Project scaffolding'
-    git remote add origin git@github.com:{{ main fork name }}/repo-name.git
+    git remote add origin git@github.com:user-or-org-name/repo-name.git
     git push -u origin master
 
 Please make a "develop" branch of the main project on Github and set "develop" as the default branch after it has been pushed.
