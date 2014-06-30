@@ -1,3 +1,10 @@
+[run]
+branch = True
+omit =
+    {{ project_name }}/migrations/*
+    {{ project_name }}/tests/*
+    {{ project_name }}/version.py
+source = {{ project_name }}
 [report]
 exclude_lines =
     # Have to re-enable the standard pragma
@@ -5,3 +12,5 @@ exclude_lines =
 
     # Don't complain if tests don't hit defensive assertion code:
     raise NotImplementedError
+fail_under = 100
+show_missing = 1
