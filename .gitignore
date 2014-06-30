@@ -11,6 +11,7 @@ htmlcov/
 
 # Setuptools distribution folder.
 /dist/
+/build/
 
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
@@ -18,6 +19,16 @@ htmlcov/
 
 # Virtualenv
 env/
+venv/
 
 # OSX
 .DS_Store
+
+# Pycharm
+.idea/
+
+# Documentation artifacts
+docs/_build/
+
+# IPython Notebook
+.ipynb_checkpoints/
