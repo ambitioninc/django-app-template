@@ -64,6 +64,9 @@ need to add docstrings to your functions, classes, and methods yourself. A
 basic example has been added in docs/ref/project_name, but you'll have to
 manually tweak that yourself.
 
+Don't forget to add a github webhook to ReadTheDocs so the documentaion is
+automatically updated on each build.
+
 Python Versions
 ---------------
 

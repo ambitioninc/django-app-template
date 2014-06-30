@@ -65,10 +65,10 @@ Release Checklist
 
 Before a new release, please go through the following checklist:
 
-* bump version in {{ project_name }}/version.py
+* Bump version in {{ project_name }}/version.py
 * Git tag the version
 * Add a release note in docs/release_notes/
-* add the newest release note to docs/release_notes/index.rst
+* Add the newest release note to docs/release_notes/index.rst
 
 Vulnerability Reporting
 -----------------------
