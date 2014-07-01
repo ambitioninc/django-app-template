@@ -41,7 +41,7 @@ master_doc = 'toc'
 
 # General information about the project.
 project = u'{{ project_name }}'
-copyright = u'{{ current_year }}, {{ author_name }}'
+copyright = u'{{ current_year }}, Ambition Inc.'
 
 # The short X.Y version.
 version = get_version()
