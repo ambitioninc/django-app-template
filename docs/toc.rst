@@ -7,8 +7,4 @@ Table of Contents
    index
    ref/{{ project_name }}
    contributing
-
-Indices and tables
-==================
-
-* :ref:`search`
+   release_notes/index
