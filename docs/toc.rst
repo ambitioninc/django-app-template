@@ -5,6 +5,7 @@ Table of Contents
    :maxdepth: 2
 
    index
+   installation
    ref/{{ project_name }}
    contributing
    release_notes/index
