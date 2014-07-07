@@ -8,4 +8,4 @@ Table of Contents
    installation
    ref/{{ project_name }}
    contributing
-   release_notes/index
+   release_notes
