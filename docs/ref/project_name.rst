@@ -1,6 +1,6 @@
 .. _ref-{{ project_name }}:
 
-{{ project_name }}
+Code documentation
 ==================
 
 {{ project_name }}
