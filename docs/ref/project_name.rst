@@ -9,6 +9,5 @@
 .. automodule:: {{ project_name }}
 .. autoclass:: {{ project_name }}.{{ project_name }}
     :members:
-    :undoc-members:
 
     .. automethod:: __init__
