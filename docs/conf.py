@@ -5,6 +5,12 @@
 import os
 import re
 
+# -- Django configuration -------------------------------------------------
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+from settings import configure_settings
+configure_settings()
+
 
 def get_version():
     """
@@ -132,9 +138,3 @@ texinfo_documents = [
    u'{{ author_name }}', '{{ repo_name }}', 'A short description',
    'Miscellaneous'),
 ]
-
-# -- Django configuration -------------------------------------------------
-import sys
-sys.path.insert(0, os.path.abspath('..'))
-from settings import configure_settings
-configure_settings()
