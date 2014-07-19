@@ -21,7 +21,7 @@ To get the source source code and run the unit tests, run::
     $ . env/bin/activate
     $ python setup.py install
     $ coverage run setup.py test
-    $ coverage report
+    $ coverage report --fail-under=100
 
 While 100% code coverage does not make a library bug-free, it significantly
 reduces the number of easily caught bugs! Please make sure coverage is at 100%
