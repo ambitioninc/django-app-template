@@ -3,6 +3,15 @@
 
 .. image:: https://coveralls.io/repos/ambitioninc/{{ repo_name }}/badge.png?branch=develop
     :target: https://coveralls.io/r/ambitioninc/{{ repo_name }}?branch=develop
+
+.. image:: https://pypip.in/v/{{ repo_name }}/badge.png
+    :target: https://crate.io/packages/{{ repo_name }}/
+    :alt: Latest PyPI version
+
+.. image:: https://pypip.in/d/{{ repo_name }}/badge.png
+    :target: https://crate.io/packages/{{ repo_name }}/
+    :alt: Number of PyPI downloads
+{#
 {#
 
 Setup Instructions
