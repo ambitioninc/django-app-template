@@ -1,5 +1,8 @@
 .. image:: https://travis-ci.org/ambitioninc/{{ repo_name }}.png
    :target: https://travis-ci.org/ambitioninc/{{ repo_name }}
+
+.. image:: https://coveralls.io/repos/ambitioninc/{{ repo_name }}/badge.png?branch=develop
+    :target: https://coveralls.io/r/ambitioninc/{{ repo_name }}?branch=develop
 {#
 
 Setup Instructions
