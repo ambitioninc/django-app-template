@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # {{ repo_name }} documentation build configuration file
-
+import inspect
 import os
 import re
 
@@ -10,6 +10,9 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 from settings import configure_settings
 configure_settings()
+
+from django.utils.html import strip_tags
+from django.utils.encoding import force_unicode
 
 
 def get_version():
@@ -79,7 +82,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
@@ -179,4 +182,4 @@ def process_django_model_docstring(app, what, name, obj, options, lines):
 
 def setup(app):
     # Register the docstring processor with sphinx
-    app.connect('autodoc-process-docstring', process_docstring)  
+    app.connect('autodoc-process-docstring', process_django_model_docstring)
