@@ -11,8 +11,15 @@ sys.path.insert(0, os.path.abspath('..'))
 from settings import configure_settings
 configure_settings()
 
+
+PY2 = sys.version_info[0] == 2
+if PY2:
+    from django.utils.encoding import force_unicode
+else:
+   def force_unicode(str):
+        return str
+
 from django.utils.html import strip_tags
-from django.utils.encoding import force_unicode
 
 
 def get_version():
