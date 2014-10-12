@@ -36,7 +36,7 @@ rename your base folder to be your repo name rather than the project name.
 Once the project is copied, it is up to the user to open the setup.py file and
 modify the following args:
 
-* description: A short summary of the app
+* description: A short summary of the app. Be sure to write a description, otherwise it will show up as UNKNOWN on pypi.
 * keywords: Relevant words associated with your project. Ex: 'api, python, datetime'
 * install_requires: Any required packages
 
