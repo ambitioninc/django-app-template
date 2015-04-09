@@ -85,6 +85,13 @@ Python Versions
 This project automatically has travisci build for python 2.7, 3.2, and 3.3. If
 you'd prefer just 2.7, please modify .travis.yml and setup.py's classifiers.
 
+Register on pypi
+----------------
+
+To register the project before you make an initial release, run::
+
+    python setup.py register
+
 #}
 
 {{ repo_name }}
