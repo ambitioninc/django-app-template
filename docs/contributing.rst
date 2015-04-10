@@ -72,6 +72,8 @@ Before a new release, please go through the following checklist:
 * Add a release note in docs/release_notes.rst
 * Upload to pypi
 
+Uploading to pypi can be accomplished by running python publish.py
+
 Vulnerability Reporting
 -----------------------
 
