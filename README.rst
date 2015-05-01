@@ -18,12 +18,12 @@ Setup Instructions
 ==================
 To start a new project with this template::
 
-    $ virtualenv env
-    $ . ./env/bin/activate
-    $ pip install jinja2
-    $ python new_project.py --author-name <Your Name> --author-email your.email@ambition.com --pypi-name pypy-package-name --repo-name github-repo-name --project-name python_project_name --rtd-subdomain my-project
+    virtualenv env
+    . ./env/bin/activate
+    pip install jinja2
+    python new_project.py --author-name <Your Name> --author-email your.email@ambition.com --pypi-name pypy-package-name --repo-name github-repo-name --project-name python_project_name --rtd-subdomain my-project
     or
-    $ python new_project.py --help
+    python new_project.py --help
 
 
 The new_project.py script will create all of the necessary folders and
@@ -57,13 +57,13 @@ Go to github.com and:
 After the repo has been created, go back to your base folder in your project
 and type::
 
-    $ rm -rf .git # Remove the project template .git folder
-    $ rm new_project.py
-    $ git init
-    $ git add .
-    $ git commit -m 'Project scaffolding'
-    $ git remote add origin git@github.com:ambitioninc/repo-name.git
-    $ git push -u origin master
+    rm -rf .git # Remove the project template .git folder
+    rm new_project.py
+    git init
+    git add .
+    git commit -m 'Project scaffolding'
+    git remote add origin git@github.com:ambitioninc/repo-name.git
+    git push -u origin master
 
 Please make a "develop" branch of the main project on Github and set "develop"
 as the default branch after it has been pushed.
