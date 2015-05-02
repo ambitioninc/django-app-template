@@ -2,7 +2,6 @@
 branch = True
 omit =
     {{ project_name }}/migrations/*
-    {{ project_name }}/tests/*
     {{ project_name }}/version.py
 source = {{ project_name }}
 [report]
