@@ -45,6 +45,7 @@ setup(
         'django-nose',
         'mock>=1.0.1',
         'coverage>=3.7.1',
+        'django-dynamic-fixture',
     ],
     test_suite='run_tests.run_tests',
     include_package_data=True,
