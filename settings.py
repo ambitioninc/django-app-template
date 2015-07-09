@@ -49,4 +49,5 @@ def configure_settings():
             ROOT_URLCONF='{{ project_name }}.urls',
             DEBUG=False,
             MIDDLEWARE_CLASSES=(),
+            DDF_FILL_NULLABLE_FIELDS=False,
         )
